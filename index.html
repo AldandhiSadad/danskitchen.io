@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="witdh=device-witdh, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* Screen Mobile */
+@media screen and (max-width: 756px) {
+.container-makanan {
+    flex-direction: column;
+}
+
+.container-minuman {
+    flex-direction: column;
+}
+
+.card {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-deskripsi {
+    font-size: 13px;
+}
+
+.harga {
+    font-size: 13px;
+}
+
+nav ul li a {
+    padding: 0px 10px 0px 10px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.data-diri {
+    font-size: 13px;
+    margin: auto;
+    text-align: justify;
+   }
+
+.profile-img {
+    width: 240px;
+    height: 240px;
+}
+article {
+box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+margin-top: 20px;
+margin-bottom: 20px;
+overflow: auto;
+background-color: #EDDFB3;
+} 
+
+.deskripsi_about_us {
+    padding: 10px;
+}
+
+.icon_whatsapp {
+width: 17px;
+height: 17px;
+}
+.icon_map {
+    width: 11px;
+    height: 18px;
+    
+}
+.icon_email {
+    width: 16px;
+    height: 11px;
+    
+}
+.deskripsisosmed {
+    font-size: 13px;
+}
+.deskripsi_map {
+    font-size: 13px;
+}
+.copyright {
+    padding-top: 15px;
+    font-size: 15px;
+}
+}
+
+/* Screen Tablet dan Laptop/PC */
+@media screen and (min-width: 756px) {
+.card {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-img {
+    border-radius: 10px;
+}
+
+.card-deskripsi {
+    font-size: 17px;
+}
+
+.harga {
+    font-size: 17px;
+}
+
+nav ul li a {
+    padding: 0px 20px 0 20px;
+}
+
+.data-diri {
+    width: auto;
+    height: 70px;
+    text-align: center;
+    padding-left: 280px;
+    padding-right: 280px;
+   }
+
+.profile-img {
+    width: 240px;
+    height: 240px;
+}  
+article {
+box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+overflow: auto;
+background-color: #EDDFB3;
+} 
+
+/* footer */
+.icon_whatsapp {
+width: 25px;
+height: 25px;
+}
+
+.icon_map {
+    width: 15px;
+    height: 22px;
+    
+}
+
+.icon_email {
+    width: 20px;
+    height: 15px;
+    
+}
+.copyright {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+}
+
+/* Ukuran Mobile Kecil */
+@media screen and (max-width: 356px) {
+.card-deskripsi {
+    font-size: 10px;
+}
+
+.harga {
+    font-size: 10px;
+}
+
+.logo  {
+    font-size: 10px;
+}
+
+nav ul li a {
+    padding: 0px 5px 0px 5px;
+    font-size: 10px;
+}
+
+.profile-img {
+    width: 144px;
+    height: 144px;
+}
+
+.data-diri {
+    font-size: 10px;
+    margin: auto;
+    text-align: center;
+   }
+
+.icon_whatsapp {
+    width: 15px;
+    height: 15px;
+}
+.icon_whatsapp:hover {
+    color: #E6B325;
+    border-radius: 3px;
+    width: 100px;
+    height: 17px;
+}
+.icon_map {
+    width: 11px;
+    height: 18px;
+    
+}
+.icon_email {
+    width: 16px;
+    height: 11px;
+    
+}
+.deskripsisosmed {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.deskripsi_map {
+    font-size: 13px;
+}
+.copyright {
+    padding-top: 15px;
+    font-size: 12px;
+}
+}
+
+/* Seluruh Bagian */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+padding: 0;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Quicksand', sans-serif;
+}
+
+main {
+margin: 10px;
+}
+
+/* Header */
+.wrapper {
+width: 1100px;
+margin: auto;
+position: relative;
+}
+
+.logo  {
+font-weight: 600;
+font-size: 40px;
+color: #876445;
+}
+
+nav {
+width: 100%;
+text-align: center;
+margin: auto;
+display: flex;
+line-height: 80px;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+background: #CA955C;
+margin-bottom: 20px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+nav ul li {
+display: inline-block;
+}
+
+nav ul li a {
+color: #876445;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+color: rgb(225, 225, 225);
+}
+
+
+/* Article */
+
+
+/* First Article */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+width: 100%;
+max-height: 480px;
+position: relative;
+margin: auto;
+}
+.gambar {
+width: 100%;
+height: 480px;
+border-radius: 5px;
+object-fit: cover;
+}
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+
+.deskripsi h2 {
+font-size: 30px;
+}
+
+.deskripsi p {
+font-size: 20px;
+}
+
+/* Second Article */
+.second.article {
+padding: 5px;
+}
+
+.container-makanan {
+display: flex;
+width: 100%;    
+}
+
+.card-img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+.card {
+flex-grow: 1;
+background-color: #E6B325;
+width: 100%;
+}
+
+.daftarmenu {
+text-align: center;
+font-weight: 600px;
+font-size: 40px;
+}
+
+.card-deskripsi {
+margin-left: 30px;
+font-weight: 600;
+float: left;
+}
+
+.harga {
+float: right;
+margin-right: 10px;
+font-weight: 600;
+text-decoration: none;
+overflow: hidden;
+}
+
+.container-minuman {
+display: flex;
+margin-top: 20px;
+width: 100%;
+}
+
+/* Aside */
+.profile {
+text-align: center;
+}
+
+.profile p {
+text-align: center;
+}
+
+/* Footer */
+footer {
+text-align: center;
+font-weight: 600;
+background-color:#CA955C;
+padding: 20px;
+font-size: 15px;
+font-family: 'Open Sans', sans-serif;
+}
+        </style>
+        <title>Dan's Kitchen</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="wrapper">
+                    <div class="logo">Dan's Kitchen</div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#BERANDA">BERANDA</a></li>
+                            <li><a href="#DAFTARMENU">DAFTAR MENU</a></li>
+                            <li><a href="#LAINNYA">LAINNYA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <article id="BERANDA" class="first article">
+                    <div class="deskripsi">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="assets/image/bakso.jpg" class="gambar">
+                                <div class="text">Bakso</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="assets/image/thai-food-noodles-spicy-boil-with-pork-boil-egg (1).jpg" class="gambar">
+                                <div class="text">Mie Ayam</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="assets/image/jus.jpg" class="gambar">
+                                <div class="text">Juice</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="assets/image/boba.jpg" class="gambar">
+                                <div class="text">Boba</div>
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                        <h2 class="deskripsi_about_us">About us</h2>
+                        <p class="deskripsi_about_us">Dan's Kitchen adalah Sebuah Restoran UMKM yang bergerak di sektor Kuliner yang Menyajikan Makanan dan Minuman yang Populer di Indonesia seperti Bakso, Mie Ayam, Aneka Jus Buah dan juga BOBA dengan Cita Rasa khas. Gimana? Ngilerkan?, Makanya langsung aja ke Dan's Kitchen yang InsyaAllah buka 24 jam Setiap Hari.</p>
+                    </div>
+                </article>
+
+                <article id="DAFTARMENU" class="second article">
+                    <h2 class="daftarmenu">DAFTAR MENU</h2>
+                    <div class="container-makanan">
+                        <div class="card">
+                            <img src="assets/image/bakso.jpg" class="card-img">
+                            <div class="card-deskripsi">
+                                <ul>
+                                    <li>BAKSO BIASA</li>
+                                    <li>BAKSO BIASA CAMPUR</li>
+                                    <li>BAKSO URAT </li>
+                                    <li>BAKSO URAT CAMPUR</li>
+                                    <li>BAKSO URAT JUMBO </li>
+                                    <li>BAKSO URAT JUMBO CAMPUR</li>
+                                    <li>BAKSO IGA SAPI</li>
+                                    <li>BAKSO MERCON</li>
+                                    <li>BAKSO MERCON JUMBO</li>
+                                </ul>
+                            </div>
+                            <div class="harga">
+                                <ul>
+                                    <li>13.000K </li>
+                                    <li>14.500K </li>
+                                    <li>15.000K </li>
+                                    <li>16.500K </li>
+                                    <li>18.000K </li>
+                                    <li>19.500K </li>
+                                    <li>21.000K </li>
+                                    <li>16.000K </li>
+                                    <li>18.000K </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/image/thai-food-noodles-spicy-boil-with-pork-boil-egg (1).jpg" class="card-img">
+                            <div class="card-deskripsi">
+                                <ul>
+                                    <li>MIE AYAM</li>
+                                    <li>MIE AYAM BAKSO</li>
+                                    <li>MIE AYAM BESAR </li>
+                                    <li>MIE AYAM BESAR BAKSO</li>
+                                    <li>MIE AYAM PANGSIT </li>
+                                    <li>MIE AYAM BAKSO PANGSIT</li>
+                                    <li>MIE AYAM BESAR PANGSIT</li>
+                                    <li>MIE AYAM BESAR BAKSO PA</li>
+                                    <li>MIE AYAM SPESIAL Khas </li>
+                                </ul>
+                            </div>
+                            <div class="harga">
+                                <ul>
+                                    <li>13.000K </li>
+                                    <li>15.000K </li>
+                                    <li>17.000K </li>
+                                    <li>19.000K </li>
+                                    <li>13.500K </li>
+                                    <li>16.500K </li>
+                                    <li>18.500K </li>
+                                    <li>20.500K </li>
+                                    <li>20.000K </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-minuman">
+                        <div class="card">
+                            <img src="assets/image/jus.jpg" class="card-img">
+                            <div class="card-deskripsi">
+                                <ul>
+                                    <li>JUS JERUK</li>
+                                    <li>JUS KIWI</li>
+                                    <li>JUS STROBERI</li>
+                                    <li>JUS MANGGA</li>
+                                    <li>JUS SIRSAK</li>
+                                    <li>JUS MELON</li>
+                                    <li>JUS APEL</li>
+                                    <li>JUS PIR</li>                                
+                                </ul>
+                            </div>
+                            <div class="harga">
+                                <ul>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                    <li>8.000K</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/image/boba.jpg" class="card-img">
+                            <div class="card-deskripsi">
+                                <ul>
+                                    <li>FRESH MILK BOBA AREN</li>
+                                    <li>ES FRESH MILK BOBA AREN</li>
+                                    <li>KOPI LATTE BOBA AREN</li>
+                                    <li>ES KOPI LATTE BOBA AREN</li>
+                                    <li>CAPPUCCINO BOBA AREN </li>
+                                    <li>ES CAPPUCCINO BOBA AREN </li>
+                                    <li>KOPI SUSU BOBA AREN</li>
+                                    <li>ES KOPI SUSU BOBA AREN </li>
+                                </ul>
+                            </div>
+                            <div class="harga">
+                                <ul>
+                                    <li>10.000K </li>
+                                    <li>10.000K </li>
+                                    <li>12.000K </li>
+                                    <li>12.000K </li>
+                                    <li>13.000K </li>
+                                    <li>13.000K </li>
+                                    <li>12.000K </li>
+                                    <li>12.000K </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+                <aside>
+                    <article id="LAINNYA" class="profile">
+                        <header>
+                            <h2>BIODATA PEMILIK</h2>
+                            <img src="assets/image/60111 [Converted].png" class="profile-img">
+                         </header>
+                         <section class="data-diri">
+                                <p>Nama saya Aldandhi Sadad Naufal lahir 2005 di Bekasi. Saya lulusan S1 Ilmu Komputer Universitas Negeri Jakarta. saya mempunyai skill di bidang Web Developer. disamping itu saya juga suka dengan bidang kuliner, maka dari itu saya merintis usaha pertama yaitu sebuah restaurant yang bernama Dan's Kitchen. </P>
+                         </section>   
+                    </article>
+                </aside>
+        </main>
+        <footer>
+            <img src="assets/image/maps.png" class="icon_map">
+            <p class="deskripsi_sosmed">Jl.papandayan II Perum Grand Kahuripan, Cileungsi, Kabupaten Bogor, Jawa Barat, Indonesia.</p>
+            <img src="assets/image/email.png" class="icon_email">
+            <p class="deskripsi_sosmed">aldandhisadad123@gmail.com</p>
+            <p class="deskripsisosmed">Contact me</p><a href="https://wa.me/6289687875140"><img src="assets/image/wa kotak.png" class="icon_whatsapp"></a>    <a href="https://www.instagram.com/aldandhisadadnaufal"><img src="assets/image/ig kotak.png" class="icon_whatsapp"></a>  <a href="https://www.facebook.com/profile.php?id=100085138830596"><img src="assets/image/fb.png" class="icon_whatsapp"></a>
+            <p class="copyright">Copyright &copy; 2022 Dan's Kitchen</p>
+        </footer>
+        <script>
+                        let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
